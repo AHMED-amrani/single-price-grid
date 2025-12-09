@@ -1,0 +1,130 @@
+/* === Global Reset === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+}
+
+/* === Body === */
+body {
+    background: hsl(204, 43%, 93%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* === Main Top Section === */
+main {
+    background: white;
+    padding: 35px;
+    max-width: 650px;
+    border-radius: 10px 10px 0 0;
+}
+
+main h2 {
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 15px;
+}
+
+main h4 {
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 15px;
+}
+
+main p {
+    color: hsl(218, 22%, 67%);
+    line-height: 1.6;
+}
+
+/* === Subscription Section === */
+section {
+    background: hsl(179, 62%, 43%);
+    color: white;
+    padding: 35px;
+    max-width: 650px;
+}
+
+section h3 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+section h3 span {
+    font-size: 14px;
+    opacity: 0.7;
+    margin-left: 8px;
+}
+
+section p {
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+section button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 14px;
+    background: hsl(71, 73%, 54%);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+section button:hover {
+    opacity: 0.9;
+}
+
+/* === Why Us Section === */
+.other.side {
+    background: hsl(179, 47%, 52%);
+    color: white;
+    padding: 35px;
+    max-width: 650px;
+    border-radius: 0 0 10px 10px;
+}
+
+.other.side p {
+    margin-top: 15px;
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+/* === Responsive: 2 Columns Layout for Desktop === */
+@media (min-width: 700px) {
+    body {
+        padding-top: 80px;
+    }
+
+    main {
+        border-radius: 10px 10px 0 0;
+    }
+
+    section, .other.side {
+        max-width: none;
+    }
+
+    /* Grid Wrapper */
+    main, section, .other.side {
+        width: 650px;
+    }
+
+    /* Bottom sections side by side */
+    section, .other.side {
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+    }
+
+    section {
+        border-radius: 0 0 0 10px;
+    }
+
+    .other.side {
+        border-radius: 0 0 10px 0;
+    }
+}
